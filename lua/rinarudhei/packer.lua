@@ -86,10 +86,12 @@ return require('packer').startup(function(use)
             require'hop'.setup { keys = 'etovxqpdygfblzhckisuran' }
         end
     }
+
+    use 'nvim-tree/nvim-web-devicons'
     use {
         'nvim-lualine/lualine.nvim',
         'archibate/lualine-time',
-        requires = {'nvim-tree/nvim-web-devicons', opt = true},
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
     }
 
 end)
