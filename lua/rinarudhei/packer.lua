@@ -7,10 +7,11 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    use 'nvim-tree/nvim-web-devicons'
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.8',
         -- or                            , branch = '0.1.x',
-        requires = { { 'nvim-lua/plenary.nvim' } }
+        requires = { { 'nvim-lua/plenary.nvim' }, { 'nvim-tree/nvim-web-devicons' } },
     }
     use({
         'projekt0n/github-nvim-theme',
@@ -88,7 +89,6 @@ return require('packer').startup(function(use)
         end
     }
 
-    use 'nvim-tree/nvim-web-devicons'
     use {
         'nvim-lualine/lualine.nvim',
         'archibate/lualine-time',
